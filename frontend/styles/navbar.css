@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+
+header a {
+  color: white;
+}
+header a:hover {
+  color: white;
+}
+
+header ul,
+header p {
+  margin: 0;
+}
+
+@layer base {
+  .nav-link {
+    @apply hover:bg-color1 transition-all hover:text-white px-3 py-[6px] flex items-center rounded-[20px];
+  }
+
+  li.dropdown {
+    @apply h-[70px] md:h-[75px] pt-[16px] md:pt-[18px];
+  }
+
+  li.dropdown:hover > .mega-menu {
+    @apply opacity-100 block transition-all duration-300;
+  }
+
+  .drop-icon {
+    @apply px-1 py-1 text-[28px] transition-all duration-300;
+  }
+
+  li.dropdown:hover .drop-icon {
+    @apply rotate-180;
+  }
+
+  li.dropdown:hover > .nav-link.dropdown-link {
+    @apply bg-color1 transition-all;
+  }
+
+  .nav-link.dropdown-link {
+    @apply px-3 h-[100%] flex items-start pt-[6px] rounded-t-[20px] rounded-b-none;
+  }
+  .mega-menu {
+    @apply absolute w-[100%] left-0  bg-color1 hidden opacity-0  z-[-50] top-[70px] md:top-[75px] p-5;
+  }
+
+  .mega-menu-content {
+    @apply flex;
+  }
+
+  .mega-menu-wrapper {
+    @apply bg-primary  rounded-lg p-5;
+  }
+
+  .mega-menu-col {
+    @apply flex p-5 flex-col w-[256px] rounded-lg bg-cover bg-center hover:bg-color1;
+  }
+
+  .mega-menu-col:hover .mega-menu-header a {
+    @apply text-secondary;
+  }
+
+  .mega-menu-item {
+    @apply mb-[1px];
+  }
+
+  .mega-menu-header {
+    @apply mb-4 font-[600] text-[24px];
+  }
+  .mega-menu-header a {
+    @apply font-[600] text-[24px] whitespace-nowrap mb-4;
+  }
+
+  .mega-menu-link {
+    @apply hover:text-secondary whitespace-nowrap hover:pl-1 transition-all text-[16px];
+  }
+
+ 
+}
