@@ -6,7 +6,7 @@ function Footer() {
     <footer className="text-center bg-primary text-white">
       <div className='my-container'>
         <div className="container mx-auto pt-6"
-        data-aos="fade-left">
+          data-aos="fade-left">
           <div className="flex justify-center mb-6">
             <a href="#!" type="button" className="hover:text-color3 hover:border-color3 rounded-full border-2 border-white text-white leading-normal uppercase hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out w-9 h-9 m-1">
               <svg aria-hidden="true"
@@ -150,14 +150,14 @@ function Footer() {
           </div>
 
           <div className="mb-6"
-           data-aos="fade-up">
+            data-aos="fade-up">
             <p>
-            Шилдэг загвар өмсөгч, жүжигчид болон инфлүүнсер мэргэжилтэнгүүдийг захиалах тэргүүлэх зах зээл
+              Шилдэг загвар өмсөгч, жүжигчид болон инфлүүнсер мэргэжилтэнгүүдийг захиалах тэргүүлэх зах зээл
             </p>
           </div>
 
           <div className="text-start grid lg:grid-cols-4 md:grid-cols-2"
-           data-aos="fade-right">
+            data-aos="fade-right">
             <div className="flex flex-col items-center mb-6">
               <h5 className=" text-lg text-white mb-2.5">Бидний тухай</h5>
 
@@ -220,7 +220,7 @@ function Footer() {
 
               <ul className="list-none mb-0">
                 {
-                  professions.map(pro=>(
+                  professions.map(pro => (
                     <li key={pro.slug}>
                       <a href="#!" className="footer-link">{pro.name}</a>
                     </li>
@@ -233,7 +233,7 @@ function Footer() {
 
         <div className="text-center text-white/60 p-4 bg-primary">
           © 2022
-          <a className="text-white/60" href="#"> Global Vision LLC</a>
+          <a className="text-white/60" href="#">Temuujin</a>
         </div>
       </div>
     </footer>
